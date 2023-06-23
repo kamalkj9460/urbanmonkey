@@ -45,8 +45,8 @@ body #t4s-search-hidden .t4s-mini-search__frm {padding: 15px 15px;}
   line-height: 1 !important;
 }
 .t4s-cat-item {width: 100px !important;}
-.cat_link img {width: 64px;}
-#shopify-section-template--19383788306713__5dcac651-23b6-4452-920a-f603bfd0d1c5 {display: none;}
+.cat_link img {width: 60px;}
+#shopify-section-template--19108915282201__5dcac651-23b6-4452-920a-f603bfd0d1c5 {display: none;}
 .t4s-product .t4s-product-price {padding: 1px 0;}
 .jdgm-prev-badge__text{visibility:visible !important;}
 .t4s-product-price .money {font-weight: 600!important;}
@@ -104,7 +104,7 @@ body #th_product_bundle {margin-bottom: 0;}
 .product-info-box .t4s-product__title, .t4s-pr__richtext p, .t4s-product__policies.t4s-rte {
   margin-bottom: 0px!important;
 }
-.t4s-product__review {margin: 5px 0 6px !important;}
+.t4s-product__review {margin: 0px 0 6px !important;display: block;}
 .jdgm-prev-badge__text {color: #000;}
 .sizing-chart-container {margin-bottom: 8px !important;}
 .t4s-inventory_qty {display: flex;align-items: center;margin-bottom: 8px !important;margin-top: 8px;}
@@ -123,7 +123,7 @@ body .t4s-swatch__option {margin-bottom: 12px;}
 .t4s-form__product {
   background: rgb(204 204 204 / 25%);
   padding: 14px 14px 14px;
-  border-radius: 5px;
+  border-radius: 5px;box-shadow: 0 1px 2px #0000001a;
 }
 body .t4s-tab-content ul {margin-bottom: 8px;}
 .t4s-pr-next-prev {padding-top: 5px;}
@@ -230,8 +230,6 @@ body .t4s-top-list-collections.flickityt4s_prev_enable, body .t4s-top-list-colle
 .PageHeader .Rte {height: 80px;overflow: hidden;margin-bottom: 15px;}
 .Rte.expanded {height: unset;}
 .readContent {cursor: pointer;color: #008060;font-weight: 600;}
-
-/* body .t4s-pr-style6 .t4s-product-btns {width: auto;} */
 body .t4s-pr-style6 .t4s-product-btns a {min-width: auto;padding: 0 12px;height: auto;line-height: 28px;}
 body .t4s-pr-style6 .t4s-product-btns a .t4s-text-pr {font-size: 12px;letter-spacing: normal;}
 /**** Wishlist start *****/
@@ -287,7 +285,7 @@ body .t4s-mini_cart-tool__wrap>.t4s-field span {display: initial !important;}
 body .t4s-mini_cart-tool__wrap>.t4s-field .cd {display: block !important;}
 body .t4s-mini_cart-tool__primary, body .t4s-mini_cart-tool__back {text-transform: uppercase;font-family: var(--font-family-1) !important;font-weight: normal;font-size: 12px;}
 #t4s-mini_cart .t4s-gift_wrap_text {text-align: left;}
-body .t4s-btn__checkout {margin-top: 0 !important;}
+body .t4s-btn__checkout {margin-top: 5px !important;margin-bottom: 2px !important;}
 body .t4s-swatch__item {padding: 2px 7px;margin: 3px;border-radius: 4px !important;}
 /*** mini cart start ***/
 body .t4s-mini_cart__img {width: 75px;margin-right: 12px;}
@@ -307,6 +305,9 @@ body .ezyslips_div h1 {text-transform: uppercase;font-size: 30px;}
 /**** side widget start ****/
 body .t4s-product.t4s-pr-group .t4s-widget__pr-title, body .t4s-widget__pr-title {font-size: 13px;}
 body #t4s-search-hidden .t4s-widget_img_pr {min-width: 80px;max-width: 80px;}
+body .pick_currency {bottom: 55px !important;display: none !important;}
+body #t4s-mini_cart {z-index: 99999;}
+
 /**** side widget end ****/
 /*---------------- Custom CSS for only desktop -------------------*/
 @media (min-width: 1025px) {
@@ -314,6 +315,14 @@ body #t4s-search-hidden .t4s-widget_img_pr {min-width: 80px;max-width: 80px;}
 }
 
 /*---------------- Custom CSS for tablet, mobile -------------------*/
+@media (max-width: 1700px) {
+  body #shopify-section-template--19108914921753__top .t4s-top-collections.t4s-text-center {padding-bottom: 25px;}
+  #shopify-section-template--19108914921753__top .flickityt4s-viewport {overflow: initial;}
+  body .t4s-top-list-collections.flickityt4s_next_disable .flickityt4s-viewport, body .t4s-top-list-collections.flickityt4s_next_enable .flickityt4s-viewport {height: 66px !important;}
+}
+@media (max-width: 1199px) {
+  body #shopify-section-template--19108914921753__top .t4s-top-collections.t4s-text-center {padding-bottom: 20px;}
+}
 @media (max-width: 1024px) {
   {{settings.tablet_mobile_css }}
   /**** Menu start ******/
@@ -415,7 +424,7 @@ body #t4s-search-hidden .t4s-widget_img_pr {min-width: 80px;max-width: 80px;}
   .guide-section a {font-size: 16px!important;margin: 5px !important;border: 3px solid #000 !important;}
   /****Product end****/
   /**** top collection start *****/
-  #shopify-section-template--19383788306713__5dcac651-23b6-4452-920a-f603bfd0d1c5 {display: block;}
+  #shopify-section-template--19108915282201__5dcac651-23b6-4452-920a-f603bfd0d1c5 {display: block;}
   /**** top collection end *****/
 }
 

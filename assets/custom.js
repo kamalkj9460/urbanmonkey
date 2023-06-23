@@ -13,16 +13,25 @@ setTimeout(function() {
 	   });
     $('iframe[src*="youtube"]').wrap("<div class='ta-vid-cont'></div>");
 
-$('.readContent').on("click", function(){
-  if ( $(".PageHeader .Rte").hasClass("expanded") ) {
-    $(".PageHeader .Rte").removeClass("expanded");
-    $(".readContent").text('read more');
-  } else {
+// $('.readContent').on("click", function(){
+//   if ( $(".PageHeader .Rte").hasClass("expanded") ) {
+//     $(".PageHeader .Rte").removeClass("expanded");
+//     $(".readContent").text('read more');
+//   } else {
+//       $(".PageHeader .Rte").addClass("expanded");
+//       $(".readContent").text('read less');
+//   }
+// });
+   $(".readContent").on("click", function(){
       $(".PageHeader .Rte").addClass("expanded");
-      $(".readContent").text('read less');
-  }
-});
-
+      $(this).text(function(i, text){
+          return text === "read more" ? "read less" : "read more";
+      })
+      $(".readContent").text(($(".readContent").text() == 'read more') ? 'read less' : 'read more');
+    });
+$(".readContent").on("click", function(){
+      $(".PageHeader .Rte").removeClass("expanded");
+    }
     $("#BIS_trigger").removeAttr('disabled');
     $(".size-btn").on("click", function() {
        var e = $(this).attr("data-id");
